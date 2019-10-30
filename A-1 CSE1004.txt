@@ -1,0 +1,678 @@
+package practicecat2;
+import java.util.Scanner;
+
+public class Shop {
+	
+		public static void main(String args[]) 
+		{
+			  Scanner sc=new Scanner(System.in);
+			 String name,phone;
+			 name=sc.next();
+	         phone=sc.next();
+	         String ans0;
+	         do
+	         {
+	         System.out.println("Logged in!");
+			 System.out.println("Choose the category in which you would like to shop");
+			 System.out.println("Mobiles,Laptops");
+			 String cat = sc.next();
+			if(cat.contentEquals("Mobiles"))
+			 {
+				System.out.println("Please select the brand: ");
+				System.out.println("1.Iphone ");
+				System.out.println("2.Realme ");
+				System.out.println("3.Oneplus");
+				System.out.println("4.Samsung ");
+				
+				System.out.println("Select it like 1 or 2 or 3.. ");
+				int mobiles=sc.nextInt();
+			
+				switch(mobiles)
+				{
+				case 1:
+					System.out.println("Please select which model you would like to look at ");
+					System.out.println("1.Iphone 11 ");
+					System.out.println("2.Iphone 11 pro ");
+					System.out.println("3.Iphone 11 pro max ");
+					System.out.println("4.Iphone XR");
+					System.out.println("5.Iphone XS max");
+					System.out.println("6.Iphone XS");
+					System.out.println("Select it like 1 or 2 or 3...");
+					int iph=sc.nextInt();
+					switch(iph)
+					{
+					case 1:
+						
+						System.out.println("COST: Rs.64,900 ");
+						System.out.println("Add to cart?");
+						String ans = sc.next();
+						if(ans.contentEquals("y"))
+						{
+						System.out.println("Would you like to continue??");
+						String ans2=sc.next();
+						if (ans2.contentEquals("y"))
+						{
+						System.out.println("TOTAL: Rs.64,900");
+						System.out.println("Provide valid address:");
+						String add=sc.next();
+						System.out.print("TYPE 'ok' TO PAY>> ");
+						String ok=sc.next();
+						if(ok.contentEquals("ok"))
+						{
+							System.out.println(ok);
+							System.out.println("THANK YOU!!(with a smile)");
+							System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+						}	
+						}
+						}
+						break;
+					case 2:
+						
+						System.out.println("COST: RS.1,13,900.00");
+						System.out.println("Add to cart?");
+						String ans3 = sc.next();
+						if(ans3.contentEquals("y"))
+						{
+						System.out.println("Would you like to continue??");
+						String ans4=sc.next();
+						if (ans4.contentEquals("y"))
+						{
+						System.out.println("TOTAL: RS.1,13,900.00");
+						System.out.println("Provide valid address:");
+						String add=sc.next();
+						System.out.print("TYPE 'ok' TO PAY>> ");
+						String ok=sc.next();
+						if(ok.contentEquals("ok"))
+						{
+							System.out.println(ok);
+							System.out.println("THANK YOU!!(with a smile)");
+							System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+						}	
+						}
+						}
+						break;
+					case 3:
+						
+						System.out.println("COST: ₹ 1,09,900.00");
+						System.out.println("Add to cart?");
+						String ans5=sc.next();
+						if(ans5.contentEquals("y"))
+						{
+						System.out.println("Would you like to continue??");
+						String ans6=sc.next();
+						if (ans6.contentEquals("y"))
+						{
+						System.out.println("TOTAL: ₹ 1,09,900.00");
+						System.out.println("Provide valid address:");
+						String add=sc.next();
+						System.out.print("TYPE 'ok' TO PAY>> ");
+						String ok=sc.next();
+						if(ok.contentEquals("ok"))
+						{
+							System.out.println(ok);
+							System.out.println("THANK YOU!!(with a smile)");
+							System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+						}	
+						}
+						}
+						break;
+					case 4:
+						System.out.println("COST:₹ 44,900.00 ");
+						System.out.println("Add to cart?");
+						String ans7=sc.next();
+						if(ans7.contentEquals("y"))
+						{
+						System.out.println("Would you like to continue??");
+						String ans8=sc.next();
+						if (ans8.contentEquals("y"))
+						{
+						System.out.println("TOTAL:₹ 44,900.00  ");
+						System.out.println("Provide valid address:");
+						String add=sc.next();
+						System.out.print("TYPE 'ok' TO PAY>> ");
+						String ok=sc.next();
+						if(ok.contentEquals("ok"))
+						{
+							System.out.println(ok);
+							System.out.println("THANK YOU!!(with a smile)");
+							System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+						}	
+						}
+						}
+						break;
+					case 5:
+						System.out.println("COST: ₹ 89,999.00");
+						System.out.println("Add to cart?");
+						String ans9=sc.next();
+						if(ans9.contentEquals("y"))
+						{
+						System.out.println("Would you like to continue??");
+						String ans10=sc.next();
+						if (ans10.contentEquals("y"))
+						{
+						System.out.println("TOTAL: ₹ 89,999.00");
+						System.out.println("Provide valid address:");
+						String add=sc.next();
+						System.out.print("TYPE 'ok' TO PAY>> ");
+						String ok=sc.next();
+						if(ok.contentEquals("ok"))
+						{
+							System.out.println(ok);
+							System.out.println("THANK YOU!!(with a smile)");
+							System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+						}	
+						}
+						}
+						break;
+					case 6:
+						System.out.println("COST: ₹ 79,499.00 ");
+						System.out.println("Add to cart?");
+						String ans111=sc.next();
+						if(ans111.contentEquals("y"))
+						{
+						System.out.println("Would you like to continue??");
+						String ans112=sc.next();
+						if (ans112.contentEquals("y"))
+						{
+						System.out.println("TOTAL: ₹ 79,499.00 ");
+						System.out.println("Provide valid address:");
+						String add=sc.next();
+						System.out.print("TYPE 'ok' TO PAY>> ");
+						String ok=sc.next();
+						if(ok.contentEquals("ok"))
+						{
+							System.out.println(ok);
+							System.out.println("THANK YOU!!(with a smile)");
+							System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+						}	
+						}
+						}
+						break;
+					}
+					
+					break;
+				case 2:
+					System.out.println("Please select which model you would like to look at ");
+					System.out.println("1.Realme X2 pro ");
+					System.out.println("2.Realme Xt ");
+					System.out.println("3.Realme X ");
+					System.out.println("4.Realme 5pro");
+					System.out.println("Select it like 1 or 2 or 3...");
+					int real=sc.nextInt();
+					switch(real)
+					{
+				case 1:
+					
+					System.out.println("COST: RS.31,891.95");
+					System.out.println("Add to cart?");
+					String ans11=sc.next();
+					if(ans11.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans12=sc.next();
+					if (ans12.contentEquals("y"))
+					{
+					System.out.println("TOTAL: RS.31,891.95");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 2:
+					
+					System.out.println("COST: ₹ 17,700.00");
+					System.out.println("Add to cart?");
+					String ans13=sc.next();
+					if(ans13.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans14=sc.next();
+					if (ans14.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 17,700.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 3:
+					
+					System.out.println("COST: ₹ 17,470.00 ");
+					System.out.println("Add to cart?");
+					String ans15=sc.next();
+					if(ans15.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans16=sc.next();
+					if (ans16.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 17,470.00 ");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 4:
+					System.out.println("COST: RS.14,699.00");
+					System.out.println("Add to cart?");
+					String ans17=sc.next();
+					if(ans17.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans18=sc.next();
+					if (ans18.contentEquals("y"))
+					{
+					System.out.println("TOTAL: RS.14,699.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				}
+					break;
+				case 3:
+					System.out.println("Please select which model you would like to look at ");
+					System.out.println("1.Oneplus 7t pro ");
+					System.out.println("2.Oneplus 7t ");
+					System.out.println("3.Oneplus 7 pro ");
+					System.out.println("4.Oneplus 7");
+					System.out.println("Select it like 1 or 2 or 3...");
+					int one=sc.nextInt();
+					switch(one)
+					{
+				case 1:
+					
+					System.out.println("COST: ₹ 53,999.00");
+					System.out.println("Add to cart?");
+					String ans21=sc.next();
+					if(ans21.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans22=sc.next();
+					if (ans22.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 53,999.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 2:
+					
+					System.out.println("COST: ₹ 39,999.00");
+					System.out.println("Add to cart?");
+					String ans23=sc.next();
+					if(ans23.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans24=sc.next();
+					if (ans24.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 39,999.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 3:
+					
+					System.out.println("COST: ₹ 53,999.00");
+					System.out.println("Add to cart?");
+					String ans25=sc.next();
+					if(ans25.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans26=sc.next();
+					if (ans26.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 53,999.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 4:
+					System.out.println("COST: ₹ 29,999.00 ");
+					System.out.println("Add to cart?");
+					String ans27=sc.next();
+					if(ans27.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans28=sc.next();
+					if (ans28.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 29,999.00 ");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+					}
+					break;	
+				case 4:
+				System.out.println("Please select which model you would like to look at ");
+				System.out.println("1.Galaxy fold");
+				System.out.println("2.Galaxy Note 10 ");
+				System.out.println("3.Galaxy Note 10+ ");
+				System.out.println("4.Galaxy S10");
+				System.out.println("Select it like 1 or 2 or 3...");
+				int sam=sc.nextInt();
+					switch(sam)
+					{
+				case 1:
+					
+					System.out.println("COST: Rs.1,64,999");
+					System.out.println("Add to cart?");
+					String ans31=sc.next();
+					if(ans31.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans32=sc.next();
+					if (ans32.contentEquals("y"))
+					{
+					System.out.println("TOTAL: Rs.1,64,999");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 2:
+					
+					System.out.println("COST: ₹ 69,999.00");
+					System.out.println("Add to cart?");
+					String ans33=sc.next();
+					if(ans33.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans34=sc.next();
+					if (ans34.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 69,999.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 3:
+					
+					System.out.println("COST: ");
+					System.out.println("Add to cart?");
+					String ans35=sc.next();
+					if(ans35.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans36=sc.next();
+					if (ans36.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 79,999.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				
+				case 4:
+					System.out.println("COST: ₹ 61,900.00");
+					System.out.println("Add to cart?");
+					String ans39=sc.next();
+					if(ans39.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans40=sc.next();
+					if (ans40.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 61,900.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);
+					}
+					}
+					}
+					break;
+				}
+					break;
+				default :
+					System.out.println("NOT YET IN THE STORE");
+					break;
+				}
+			 }
+			
+			
+			if(cat.contentEquals("Laptops"))
+			{
+				System.out.println("Please select the brand: ");
+				System.out.println("1.Dell ");
+				System.out.println("2.Lenovo ");
+				System.out.println("Select 1 or 2");
+				int lap=sc.nextInt();
+			
+				switch(lap)
+				{
+				case 1:
+					System.out.println("Please select which model you would like to look at ");
+					System.out.println("1.DELL Gaming-G3 3579 15.6-inch Laptop (8th Gen Core i5-8300H/8GB/512GB SSD/Windows 10/4GB NVIDIA 1050 Ti Graphics) ");
+					System.out.println("2.Dell XPS 15 9570 8thGeneration Corei7,16GB RAM,512GB SSD,4GB 1050 Graphics,Win10 Professional 15.6\" Full HD Laptop ");
+					System.out.println("Please Select 1 or 2");
+					int iph=sc.nextInt();
+					switch(iph)
+					{
+					case 1:
+						
+						System.out.println("COST: Rs.64,900 ");
+						System.out.println("Add to cart?");
+						String ans = sc.next();
+						if(ans.contentEquals("y"))
+						{
+						System.out.println("Would you like to continue??");
+						String ans2=sc.next();
+						if (ans2.contentEquals("y"))
+						{
+						System.out.println("TOTAL: Rs.64,900");
+						System.out.println("Provide valid address:");
+						String add=sc.next();
+						System.out.print("TYPE 'ok' TO PAY>> ");
+						String ok=sc.next();
+						if(ok.contentEquals("ok"))
+						{
+							System.out.println(ok);
+							System.out.println("THANK YOU!!(with a smile)");
+							System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+						}	
+						}
+						}
+						break;
+					case 2:
+						
+						System.out.println("COST: RS.1,13,900.00");
+						System.out.println("Add to cart?");
+						String ans3 = sc.next();
+						if(ans3.contentEquals("y"))
+						{
+						System.out.println("Would you like to continue??");
+						String ans4=sc.next();
+						if (ans4.contentEquals("y"))
+						{
+						System.out.println("TOTAL: RS.1,13,900.00");
+						System.out.println("Provide valid address:");
+						String add=sc.next();
+						System.out.print("TYPE 'ok' TO PAY>> ");
+						String ok=sc.next();
+						if(ok.contentEquals("ok"))
+						{
+							System.out.println(ok);
+							System.out.println("THANK YOU!!(with a smile)");
+							System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+						}	
+						}
+						}
+						break;
+					}
+					break;
+				case 2:
+					System.out.println("Please select which model you would like to look at ");
+					System.out.println("1.Lenovo Legion Y540 9th Gen Intel Core i5 15.6 inch FHD Gaming Laptop (8GB/512GB SSD/NVIDIA GTX 1650 4GB Graphics/Windows 10/Black/2.3Kg)");
+					System.out.println("2.Lenovo Ideapad L340 Gaming 9th Gen Intel Core i5 15.6 inch FHD Gaming Laptop (8GB RAM/1TB HDD/GTX 1050 3GB Graphics/Windows 10 Home/Black/2.2Kg)");
+					System.out.println("Please Select 1 or 2");
+					int len=sc.nextInt();
+					switch(len)
+					{
+				case 1:
+					
+					System.out.println("COST: ₹ 65,990.00");
+					System.out.println("Add to cart?");
+					String ans11=sc.next();
+					if(ans11.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans12=sc.next();
+					if (ans12.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 65,990.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				case 2:
+					
+					System.out.println("COST: ₹ 60,990.00");
+					System.out.println("Add to cart?");
+					String ans13=sc.next();
+					if(ans13.contentEquals("y"))
+					{
+					System.out.println("Would you like to continue??");
+					String ans14=sc.next();
+					if (ans14.contentEquals("y"))
+					{
+					System.out.println("TOTAL: ₹ 60,990.00");
+					System.out.println("Provide valid address:");
+					String add=sc.next();
+					System.out.print("TYPE 'ok' TO PAY>> ");
+					String ok=sc.next();
+					if(ok.contentEquals("ok"))
+					{
+						System.out.println(ok);
+						System.out.println("THANK YOU!!(with a smile)");
+						System.out.println("Your Product will be delivered within 4 days from the order placement date to "+add);	
+					}	
+					}
+					}
+					break;
+				}
+					break;
+				default :
+					System.out.println("NOT YET IN THE STORE");
+					break;
+				}
+			}
+	         System.out.println("Type 1 to continue and 2 to exit");
+	         ans0=sc.next();
+	         }
+	         while(ans0.contentEquals("1"));	 
+	    }
+	}
+
+
+
